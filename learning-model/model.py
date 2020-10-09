@@ -15,8 +15,6 @@ import copy
 import shutil
 import re
 
-### Data Preprocessing ###
-
 base_dir = "/PetImages/"
 
 # create training folder
@@ -66,11 +64,9 @@ for f in cat_files:
 
 for f in dog_files:
     validationDogsSearchObj = re.search("5\d\d\d", f)
-    if validationDogtsSearchObj:
+    if validationDogsSearchObj:
         shutil.move(f'{dog_train}/{f}', dog_val)
 
-
-### End Preprocessing ###
 
 # This main wrapper is only necessary if on Windows
 
