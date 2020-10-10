@@ -12,8 +12,10 @@ The aim of this project is to deploy a model capable of predicting the feasibili
       `code .` or any other IDE or Editor you prefer (PyCharm recommended)
 
 2. Activate the virtual environment `disaster` as follows:
-
-      `source ./disaster/bin/activate`
+      
+      `py -m venv your-env-name` for windows
+      
+      `.\your-env-name\Scripts\activate` to activate it
 
 3. Install all the required packages from `requirements.txt`:
 
